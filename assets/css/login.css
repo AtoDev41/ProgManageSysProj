@@ -1,0 +1,174 @@
+    .usernameTextBox {
+        height: 30px;
+        width: 250px;
+        border-radius: 15px;
+        border: solid 1px rgb(200, 200, 200);
+        padding-left: 10px;
+        font-size: 14px;
+        font-family: 'Arimo',monospace;
+        margin-top: 20px;
+    }
+    .passwordTextBox {
+        height: 30px;
+        width: 250px;
+        border-radius: 15px;
+        border: solid 1px rgb(200, 200, 200);
+        padding-left: 10px;
+        font-size: 14px;
+        font-family: 'Arimo',monospace;
+        margin-top: 7px;
+    }
+    .usernameTextBox:focus,
+    .passwordTextBox:focus {
+    border-color: rgb(15, 40, 90);
+    box-shadow: 0 0 4px rgba(15, 40, 90, 0.4);
+    outline: none;
+    }
+    .loginButton {
+        background-color: rgb(15, 40, 90);
+        color: rgb(240, 240, 240);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        height: 36px;
+        width: 125px;
+        font-size: 16px;
+        font-family: 'Arimo',monospace;
+        transition: all 0.3s ease;
+        margin-top: 6px;
+
+        
+    }
+.loginButton:hover {
+    background-color: rgb(21, 72, 174);
+
+}
+
+.loginButton:active {
+    background-color: rgb(6, 54, 127);
+}
+
+.signUpButton {
+    background-color: rgb(240,240,240);
+    color: rgb(15, 40, 90);
+    border-color: rgb(15, 40, 90);
+
+    font-family: 'Arimo',monospace;
+    padding: 10px 20px;
+    border: solid;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 36px;
+    width: 125px;
+    font-size: 16px;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 3px;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+}
+
+.signUpButton:hover {
+  
+    background-color: rgb(15, 40, 90);
+    color: rgb(240,240,240);
+    border-color: rgb(15, 40, 90);
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 3px;
+}
+
+.signUpButton:active {
+    background-color: rgb(15, 40, 90);
+    color: rgb(240,240,240);
+    border-color: rgb(15, 40, 90);
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    justify-content: center; /* vertical center */
+    align-items: center; /* horizontal center */
+    margin-top: -200px;
+    height: 100vh; /* full screen height */
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.welcomeText {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.welcomeText h1 {
+    font-size: 28px;      
+    margin: 0 0 10px 0;
+    font-family: 'Arimo', monospace;
+    color: rgb(25, 118, 210);
+    text-shadow:
+       1px 1px 0 black,
+      -1px 1px 0 black,
+       1px -1px 0 black,
+      -1px -1px 0 black;
+}
+
+.welcomeText p {
+    font-size: 16px;      
+    margin: 0;
+    font-family: 'Arimo', monospace;
+    color: #ddedf5;
+    text-shadow:
+       1px 1px 0 black,
+      -1px 1px 0 black,
+       1px -1px 0 black,
+      -1px -1px 0 black;
+}
+
+.outerBox {
+    width: 720px;
+    height: 500px;                   /* adjust as needed */
+    padding: 25px;
+    border: 3px solid rgb(15, 40, 90); /* green outline */
+    border-radius: 15px;
+    margin: auto;                   /* center horizontally */
+    margin-top: 170px;               /* small space from top */
+    position: relative;
+    overflow: hidden;
+    /* Box shadow (bottom) */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* horizontal, vertical, blur, color */
+    
+    /* Optional: slightly transparent background to darken the image under the box */
+    background: rgba(0, 0, 0, 0.15); 
+    backdrop-filter: blur(5px);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    
+    background: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), 
+        url("../foto2.jpg");   /* background image + darken effect */
+    background-size: cover;        /* make image fill entire screen */
+    background-position: center;   /* keep subject centered */
+    background-attachment: fixed;  /* parallax effect (optional) */
+    background-repeat: no-repeat;
+}
+
+.unselectable {
+    user-select: none;      /* Standard */
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+}

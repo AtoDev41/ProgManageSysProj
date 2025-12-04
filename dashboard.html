@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manage</title>
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+
+</head>
+<body>
+
+  <div class="page">
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="knight">♞</div>
+      <nav class="side-nav">
+        <button class="side-item active" aria-pressed="true">Lectures Program</button>
+        <button class="side-item" aria-pressed="false">Exams Program</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <!--header row-->
+      <header class="topbar" role="banner">
+        <div class="welcome">Welcome, <span id="username">username</span></div>
+
+        <div class="top-actions">
+          <label class="search">
+            <input type="search" placeholder="Search..." aria-label="Search" />
+            <!-- magnifier SVG -->
+            <svg class="icon icon-search" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 15a5 5 0 110-10 5 5 0 010 10z"/>
+            </svg>
+          </label>
+
+          <!-- settings icon -->
+          <button class="icon-btn" title="Settings" aria-label="Settings">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19.14 12.936a7.07 7.07 0 000-1.872l2.03-1.58a.5.5 0 00.12-.63l-1.92-3.32a.5.5 0 00-.6-.22l-2.39.96a7.02 7.02 0 00-1.62-.94L14.7 2.5a.5.5 0 00-.49-.5h-3.42a.5.5 0 00-.49.5l-.36 2.19a7.02 7.02 0 00-1.62.94l-2.39-.96a.5.5 0 00-.6.22L2.7 8.5a.5.5 0 00.12.63l2.03 1.58a7.07 7.07 0 000 1.872L2.82 14.55a.5.5 0 00-.12.63l1.92 3.32a.5.5 0 00.6.22l2.39-.96c.5.38 1.04.7 1.62.94l.36 2.19a.5.5 0 00.49.5h3.42a.5.5 0 00.49-.5l.36-2.19c.58-.24 1.12-.56 1.62-.94l2.39.96a.5.5 0 00.6-.22l1.92-3.32a.5.5 0 00-.12-.63l-2.03-1.58zM12 15.5A3.5 3.5 0 1112 8.5a3.5 3.5 0 010 7z"/>
+            </svg>
+          </button>
+
+          <!-- logout -->
+          <button class="logout" id="logoutBtn">Logout</button>
+        </div>
+      </header>
+
+      <!-- content area  -->
+      <section class="content">
+        <h2>Content title will be displayed here </h2>
+        <p>Under Construction. Hold on to your seats!</p>
+      </section>
+    </main>
+  </div>
+<script src="assets/js/dashboard.js"></script>
+
+</body>
+</html>
