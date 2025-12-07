@@ -292,6 +292,37 @@ table.modern-table {
   }
 }
 
+.table-section {
+  margin-top: 1.5rem;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(15,40,90); /* Blue header */
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 12px; /* rounded top corners */
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.table-header .btn.add-course {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.table-header .btn.add-course:hover {
+  background: rgba(255,255,255,0.35);
+}
+
 .unselectable {
     user-select: none;      /* Standard */
     -webkit-user-select: none; /* Safari/Chrome */
