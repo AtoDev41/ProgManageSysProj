@@ -43,7 +43,7 @@
           </button>
 
           <!-- logout -->
-          <button class="logout" id="logoutBtn">Logout</button>
+          <button class="logout unselectable" id="logoutBtn">Logout</button>
         </div>
       </header>
 
@@ -57,16 +57,16 @@
                 <input id="tableSearch" type="search" placeholder="Search table..." aria-label="Search table">
               </label>
             </div>
-            <div class="right">
+            <div class="right unselectable">
               <button class="btn compact" id="exportCsvBtn">CSV olarak indir</button>
               <button class="btn compact" id="exportExcelBtn">Excel olarak indir</button>
               <button class="btn compact" id="exportPdfBtn">PDF olarak indir</button>
             </div>
           </div>
           <!-- RESPONSIVE TABLE WRAPPER -->
-  <div class="table-wrap" role="region" aria-label="Lectures table">
+  <div class="table-wrap unselectable" role="region" aria-label="Lectures table">
     <table class="modern-table" id="myTable">
-      <caption class="sr-only">Lectures schedule</caption>
+      <!-- <caption class="sr-only">Lectures schedule</caption> -->
       <thead>
         <tr>
           <th scope="col">ID</th>
