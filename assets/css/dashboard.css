@@ -238,13 +238,13 @@ table.modern-table {
   padding: .8rem 1rem;
   border-bottom: 1px dashed rgba(30,40,60,0.04);
   font-size: .92rem;
-  color: #2b2b2b;
+  color: rgb(43, 43, 43); /* #2b2b2b = rgb(43, 43, 43) */
 }
 
 /* make each other row a different color*/
 .modern-table tbody tr:nth-child(odd) td {
   background: rgba(243, 246, 255, 0.6);
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .modern-table tbody tr:nth-child(even) td {
@@ -285,7 +285,7 @@ table.modern-table {
     content: attr(data-label);
     font-weight: 600;
     margin-right: 1rem;
-    color: #4a4a4a;
+    color: rgb(74, 74, 74); /* #4a4a4a = rgb(74, 74, 74) */
   }
   .modern-table tbody td:last-child {
     border-bottom: 0;
