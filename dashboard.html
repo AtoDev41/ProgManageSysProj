@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Manage</title>
   <link rel="stylesheet" href="assets/css/dashboard.css">
-
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+-->
 </head>
 <body>
 
@@ -49,6 +51,55 @@
       <section class="content">
         <h2>Content title will be displayed here </h2>
         <p>Under Construction. Hold on to your seats!</p>
+        <div class="table-toolbar">
+            <div class="left">
+              <label class="small-search">
+                <input id="tableSearch" type="search" placeholder="Search table..." aria-label="Search table">
+              </label>
+            </div>
+            <div class="right">
+              <button class="btn compact" id="exportCsvBtn">CSV olarak indir</button>
+              <button class="btn compact" id="exportExcelBtn">Excel olarak indir</button>
+              <button class="btn compact" id="exportPdfBtn">PDF olarak indir</button>
+            </div>
+          </div>
+          <!-- RESPONSIVE TABLE WRAPPER -->
+  <div class="table-wrap" role="region" aria-label="Lectures table">
+    <table class="modern-table" id="myTable">
+      <caption class="sr-only">Lectures schedule</caption>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Course</th>
+          <th scope="col">Lecturer</th>
+          <th scope="col">Day</th>
+          <th scope="col">Time</th>
+          <th scope="col">Room</th>
+        </tr>
+      </thead>
+      <tbody>
+         <!-- Add data-label attributes for better mobile layout (labels shown on small screens) -->
+        <tr>
+          <td data-label="ID">1</td>
+          <td data-label="Course">Operating Systems</td>
+          <td data-label="Lecturer">Dr. Yılmaz</td>
+          <td data-label="Day">Mon</td>
+          <td data-label="Time">10:00 - 12:00</td>
+          <td data-label="Room">B201</td>
+        </tr>
+        <tr>
+          <td data-label="ID">2</td>
+          <td data-label="Course">Data Structures</td>
+          <td data-label="Lecturer">Ö. Kaya</td>
+          <td data-label="Day">Wed</td>
+          <td data-label="Time">14:00 - 16:00</td>
+          <td data-label="Room">A102</td>
+        </tr>
+        <!-- More rows -->
+      </tbody>
+       </table>
+        </div>
+
       </section>
     </main>
   </div>

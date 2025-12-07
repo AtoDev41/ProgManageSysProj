@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mühendislik Fakültesi - Ders Programı Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/dashboardEsra.css">
+
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 p-0 sidebar">
+                <div class="p-3">
+                    <h5 class="text-center mb-4">
+                        <i class="bi bi-calendar-week"></i> DersPlan
+                    </h5>
+                    <nav class="nav flex-column">
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-speedometer2"></i> Dashboard
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-book"></i> Dersler
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-people"></i> Öğretim Elemanları
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-building"></i> Derslikler
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-calendar-event"></i> Program Oluştur
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-file-earmark-pdf"></i> Raporlar
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-gear"></i> Ayarlar
+                        </a>
+                        <hr>
+                        <a href="#">
+                            <i class="bi bi-box-arrow-right"></i> Çıkış Yap
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-10 p-4">
+                <!-- Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Dashboard</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="me-3">
+                            <i class="bi bi-person-circle"></i>
+                            <strong>Ahmet Yılmaz</strong>
+                            <span class="badge bg-info">Bölüm Yetkilisi</span>
+                        </span>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profil</a></li>
+                                <li><a class="dropdown-item" href="#">Ayarlar</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Çıkış Yap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Aktif Dönem</h5>
+                                <h2 class="text-primary">2025-2026 Güz</h2>
+                                <p class="text-muted">15 Eylül - 25 Ocak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Toplam Ders</h5>
+                                <h2 class="text-success">42</h2>
+                                <p class="text-muted">Bu dönem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Derslikler</h5>
+                                <h2 class="text-warning">18</h2>
+                                <p class="text-muted">Kullanılabilir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Program Durumu</h5>
+                                <h2 class="text-danger">%75</h2>
+                                <p class="text-muted">Tamamlanma Oranı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bölüme Göre Dersler -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-book"></i> Yazılım Mühendisliği Dersleri (2025-2026 Güz)</span>
+                                <button class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-plus-circle"></i> Yeni Ders Ekle
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Ders Kodu</th>
+                                                <th>Ders Adı</th>
+                                                <th>Sınıf</th>
+                                                <th>Tip</th>
+                                                <th>Hoca</th>
+                                                <th>Durum</th>
+                                                <th>İşlem</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>YZM101</td>
+                                                <td>Algoritma ve Programlama</td>
+                                                <td>1. Sınıf</td>
+                                                <td><span class="badge bg-primary">Teori</span></td>
+                                                <td>Dr. Ayşe Demir</td>
+                                                <td><span class="badge bg-success">Atandı</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>YZM102</td>
+                                                <td>Nesne Tabanlı Programlama</td>
+                                                <td>1. Sınıf</td>
+                                                <td><span class="badge bg-warning">Lab</span></td>
+                                                <td>Dr. Mehmet Kaya</td>
+                                                <td><span class="badge bg-warning">Bekliyor</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>YZM201</td>
+                                                <td>Veri Yapıları</td>
+                                                <td>2. Sınıf</td>
+                                                <td><span class="badge bg-primary">Teori</span></td>
+                                                <td>Prof. Dr. Ali Şahin</td>
+                                                <td><span class="badge bg-success">Atandı</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>FZK101</td>
+                                                <td>Fizik I</td>
+                                                <td>1. Sınıf</td>
+                                                <td><span class="badge bg-danger">Kritik Ders</span></td>
+                                                <td>Dr. Zeynep Yıldız</td>
+                                                <td><span class="badge bg-success">Atandı</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>YZM301</td>
+                                                <td>Yazılım Mimarisi</td>
+                                                <td>3. Sınıf</td>
+                                                <td><span class="badge bg-primary">Teori</span></td>
+                                                <td>Doç. Dr. Can Öztürk</td>
+                                                <td><span class="badge bg-secondary">Planlanmadı</span></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sağ Sidebar - Hızlı İşlemler -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="bi bi-lightning-charge"></i> Hızlı İşlemler
+                            </div>
+                            <div class="card-body">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary">
+                                        <i class="bi bi-magic"></i> Otomatik Program Oluştur
+                                    </button>
+                                    <button class="btn btn-success">
+                                        <i class="bi bi-calendar-week"></i> Program Editörü
+                                    </button>
+                                    <button class="btn btn-info">
+                                        <i class="bi bi-file-earmark-pdf"></i> PDF Çıktısı Al
+                                    </button>
+                                    <button class="btn btn-warning">
+                                        <i class="bi bi-people"></i> Hoca Müsaitlikleri
+                                    </button>
+                                    <button class="btn btn-secondary">
+                                        <i class="bi bi-graph-up"></i> Raporları Görüntüle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="bi bi-clock-history"></i> Son İşlemler
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Fizik I dersi taşındı</span>
+                                        <small class="text-muted">2 saat önce</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>YZM101 için hoca atandı</span>
+                                        <small class="text-muted">1 gün önce</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Program %75 tamamlandı</span>
+                                        <small class="text-muted">2 gün önce</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Yeni dönem eklendi</span>
+                                        <small class="text-muted">1 hafta önce</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="mt-4 text-center text-muted">
+                    <hr>
+                    <p>Mühendislik Fakültesi Ders Programı Sistemi &copy; 2025</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Basit örnek: Ders tablosunda tıklama
+        document.querySelectorAll('.table tbody tr').forEach(row => {
+            row.addEventListener('click', function() {
+                alert('Ders detayı açılacak veya düzenleme moduna geçilecek');
+            });
+        });
+    </script>
+</body>
+</html>
