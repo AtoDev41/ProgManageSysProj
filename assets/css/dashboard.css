@@ -110,6 +110,7 @@ html,body { height: 100%; margin: 0; font-family: 'Arimo', monospace; }
   font-family: inherit;
 }
 
+/* I need to fix this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* .search input:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(100,140,255,0.08);
@@ -207,6 +208,56 @@ html,body { height: 100%; margin: 0; font-family: 'Arimo', monospace; }
   background: rgba(15,40,90,0.04);
 }
 
+/* modern table base */
+table.modern-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: inherit;
+  background: white;
+  min-width: 600px; /* prevents squishing on desktop; wrapper will scroll on mobile */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* header */
+.modern-table thead th {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #ffffff, #fbfbff);
+  text-align: left;
+  padding: .9rem 1rem;
+  font-size: .95rem;
+  color: #223;
+  border-bottom: 1px solid rgba(30,40,60,0.06);
+  font-weight: 600;
+}
+
+/* rows and cells */
+.modern-table tbody td {
+  padding: .8rem 1rem;
+  border-bottom: 1px dashed rgba(30,40,60,0.04);
+  font-size: .92rem;
+  color: #2b2b2b;
+}
+
+/* make each other row a different color*/
+.modern-table tbody tr:nth-child(odd) td {
+  background: rgba(243, 246, 255, 0.6);
+  transition: all 0.4s ease;
+}
+
+.modern-table tbody tr:nth-child(even) td {
+  background: rgba(228, 228, 228, 0.6);
+  transition: all 0.3s ease;
+}
+
+/* hover highlight */
+.modern-table tbody tr:hover td {
+  background: rgba(180, 217, 255, 0.3);
+  transform: translateZ(0);
+  
+}
 
 .unselectable {
     user-select: none;      /* Standard */
